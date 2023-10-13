@@ -90,5 +90,10 @@ Back to Top
 
 -- PRAYER REQUEST --
 
+// Prayer request form
+// If you would like to send a prayer request to the Pastor, please use the form below.
+// Name, email, message.  (ADD Captcha)
 
 -- CONTACT US --
+// Contact us form
+// Name, email, message. (ADD Captcha)
