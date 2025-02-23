@@ -45,7 +45,7 @@ FROM php:8.1.10-apache
 RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
 
 # Copy app files from the app directory.
-COPY . /var/www/html
+COPY . /var/www/html/backend-wordpress
 
 # Switch to a non-privileged user (defined in the base image) that the app will run under.
 # See https://docs.docker.com/go/dockerfile-user-best-practices/

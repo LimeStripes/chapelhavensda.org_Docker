@@ -8,7 +8,6 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: ${DATABASE_ROOT_PASSWORD}
       MYSQL_DATABASE: ${DATABASE_NAME}
-      MYSQL_USER: ${DATABASE_USER}
       MYSQL_PASSWORD: ${DATABASE_ROOT_PASSWORD}
     healthcheck:
       test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-p${DATABASE_ROOT_PASSWORD}"]
@@ -44,7 +43,7 @@ services:
       - phpmyadmin
     image: wordpress
     env_file: .env
-    container_name: ${CONTAINER_NAME}-wordpress
+    container_name: wordpress-container
     environment:
       - WORDPRESS_DB_HOST=database:3306
       - WORDPRESS_DB_USER=${DATABASE_USER}
