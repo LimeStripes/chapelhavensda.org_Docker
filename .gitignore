@@ -20,7 +20,7 @@
 /xmlrpc.php
 
 # Mac turd files
-.DS_Store
+#.DS_Store
 
 # Configuration
 wp-config.php
